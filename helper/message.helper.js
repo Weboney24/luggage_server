@@ -15,6 +15,14 @@ const ADMIN_DELETED_SUCCESS = "Admin Deleted Successfully";
 const ADMIN_DELETED_FAILED = "Admin Deletion Failed";
 const ADMIN_ACCOUNT_ALREADY_EXISTS = "An account with this email address already exists.";
 
+// EXCEL
+const ECXEL_SHEET_UPLOAD_SUCESS = "Excel Uploaded Sucessfully & Data Saved";
+const EXCEL_SHEET_UPLOAD_FAILED = "Error processing Excel";
+const EXCEL_SHEET_DELETE_SUCCESS = "Excel Delete Sucessfully";
+const EXCEL_SHEET_DELETE_FAILED = "Excel Delete Failed";
+const EXCEL_SHEET_EDIT_SUCCESS = "Excel Edit Sucessfully";
+const EXCEL_SHEET_EDIT_FAILED = "Excel Edit Failed";
+
 module.exports = {
   SOMETHING_WENT_WRONG,
   INCORRECT_PASSWORD,
@@ -31,4 +39,12 @@ module.exports = {
   ADMIN_DELETED_SUCCESS,
   ADMIN_DELETED_FAILED,
   ADMIN_ACCOUNT_ALREADY_EXISTS,
+
+  // EXCEL
+  ECXEL_SHEET_UPLOAD_SUCESS,
+  EXCEL_SHEET_UPLOAD_FAILED,
+  EXCEL_SHEET_DELETE_SUCCESS,
+  EXCEL_SHEET_DELETE_FAILED,
+  EXCEL_SHEET_EDIT_SUCCESS,
+  EXCEL_SHEET_EDIT_FAILED,
 };

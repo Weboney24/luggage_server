@@ -7,6 +7,7 @@ const { INVALID_ACCOUNT_DETAILS, INCORRECT_PASSWORD, LOGIN_SUCCESS, PASSWORD_CHA
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log(email, password);
 
     const users = await AdminSchema.aggregate([{ $match: { email } }]);
     const user = users[0];
@@ -30,7 +31,7 @@ const login = async (req, res) => {
     const token = await GenerateToken(payload);
 
     delete user.password;
-    
+
     return successResponse(res, LOGIN_SUCCESS, {
       ...user,
       token,
