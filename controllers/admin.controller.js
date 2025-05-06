@@ -6,6 +6,8 @@ const { ADMIN_ADDED_SUCCESS, ADMIN_ADDED_FAILED, ADMIN_GETTED_SUCCESS, ADMIN_GET
 const addAdmin = async (req, res) => {
   const { email, password, name, role, phone } = req.body;
 
+  console.log(name, password);
+
   try {
     const existingAdmin = await AdminSchema.findOne({ email });
 
