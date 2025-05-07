@@ -1,6 +1,6 @@
 const { addAdmin, getAdmin, deleteAdmin, updateAdmin } = require("../controllers/admin.controller");
 const { login, changePassword, checkLoginStatus } = require("../controllers/auth.controller");
-const { add_excel } = require("../controllers/excel.controller");
+const { add_excel, get_single_user, edit_excel, delete_excel } = require("../controllers/excel.controller");
 const { addUser, getUsers, getUser } = require("../controllers/user.controller");
 
 module.exports = {
@@ -22,4 +22,5 @@ module.exports = {
 
   //excel
   add_excel,
+  get_single_user,
 };
