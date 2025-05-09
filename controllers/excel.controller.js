@@ -110,7 +110,6 @@ const delete_excel = async (req, res) => {
 const get_single_user = async (req, res) => {
   try {
     const barcodId = req.params.id;
-    console.log(barcodId);
 
     const result = await excelModel.aggregate([
       {
